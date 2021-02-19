@@ -67,6 +67,7 @@ a{
 
 .big-btn{
     padding: 20px;
+    min-width: 150px;
 }
 
 .middle-text{
@@ -159,29 +160,31 @@ main section.main-top p{
     margin: 20px 0;
 }
 
-/* MAIN BOTTOM */
+/* MAIN MIDDLE */
 
-section.main-btm{
-    height: 400px;
+section.main-middle{
+    height: 500px;
     background-color:#f4f9fd;
 }
 
-section.main-btm div.main-box{
-    height: 100%;
+section.main-middle div.main-box{
+    /* height: 100%; */
     background-color: white;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 3px 4px 2px #dbe2e8;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-section.main-btm .box-left{
+section.main-middle .box-left{
     width: 29%;
     height: 100%;
     margin: 0 1%;
     text-align: center;
 }
 
-section.main-btm .box-right{
+section.main-middle .box-right{
     width: 67%;
     height: 100%;
     margin: 0 1%;
@@ -189,7 +192,7 @@ section.main-btm .box-right{
 }
 
 div.main-box div.box-left img{
-    width: 250px;
+    width: 200px;
     margin: 35px 0;
 }
 
@@ -206,6 +209,20 @@ div.main-box div.box-right h4{
 hr.mini-bar{
     position: absolute;
     right: 9%;
-    bottom: 38%;
+    bottom: 33%;
     width: 400px;
+}
+
+/* MAIN BOTTOM */
+
+section.main-btm div.main-btm-box{
+    height: 650px;
+    background-color: teal;
+}
+
+section.main-btm div.main-btm-box div.btm-mini-box{
+    width: calc( 100% / 3 - 30px);
+    background-color: white;
+    height: 300px;
+    margin: 15px;
 }
