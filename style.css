@@ -6,8 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    width: 1400px;
-    margin: 0 auto;
 }
 
 h1{
@@ -37,7 +35,7 @@ h1{
 
 li.list-inline{
     display: inline-block;
-    padding: 0 10px;
+    margin: 0 10px;
     list-style: none;
 }
 
@@ -46,6 +44,7 @@ a{
     text-decoration: none;
     color: #3e5465;
     font-size: 12px;
+    font-weight: 900;
 }
 
 .btn{
@@ -66,6 +65,10 @@ a{
     border-color: #fe775a;
 }
 
+.big-btn{
+    padding: 20px;
+}
+
 .middle-text{
     font-size: 14px;
     color: #33475b;
@@ -82,26 +85,21 @@ a{
 
 /* HEADER */
 
-header.header-top{
-    height: 100px;
+div.header-top{
+    /* height: 100px;
+    line-height: 100px; */
+    padding: 30px 0;
     background-color: #f4f9fd;
-    line-height: 100px;
     border-bottom: 2px solid #7a8b97;
 }
  
-header.header-top div.float-left a:first-child{
+div.header-top div.float-left a:first-child{
     border-right: 2px solid grey;
    
 }
 
-header.header-btm{
-    background-color: red;
-    height: 100px;  
-    line-height: 100px;
-}
-
-header.header-btm img{
-    
+div.header-btm{
+    padding: 30px 0;    
 }
 
 /* JUMBOTRON */
@@ -130,7 +128,8 @@ div.jumbo-text{
     padding-top: 50px;
 }
 
-div.jumbo-text p{
+div.jumbo-text p,
+div.main-box div.box-right p{
     margin: 40px 0;
 }
 
@@ -141,7 +140,7 @@ main{
 
 main .main-top{
     width: 802px;
-    height: 400px;
+    height: 450px;
     margin: 0 auto;
     background-color: #f4f9fd;
     text-align: center;
@@ -160,3 +159,53 @@ main section.main-top p{
     margin: 20px 0;
 }
 
+/* MAIN BOTTOM */
+
+section.main-btm{
+    height: 400px;
+    background-color:#f4f9fd;
+}
+
+section.main-btm div.main-box{
+    height: 100%;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 2px #dbe2e8;
+}
+
+section.main-btm .box-left{
+    width: 29%;
+    height: 100%;
+    margin: 0 1%;
+    text-align: center;
+}
+
+section.main-btm .box-right{
+    width: 67%;
+    height: 100%;
+    margin: 0 1%;
+    padding: 5% 5% 0 5%;
+}
+
+div.main-box div.box-left img{
+    width: 250px;
+    margin: 35px 0;
+}
+
+div.main-box div.box-right h3{
+    font-size: 30px;
+    color: #33475b;
+    margin: 30px 0;
+}
+
+div.main-box div.box-right h4{
+    margin: 10px 0 40px 0;
+}
+
+hr.mini-bar{
+    position: absolute;
+    right: 9%;
+    bottom: 38%;
+    width: 400px;
+}
