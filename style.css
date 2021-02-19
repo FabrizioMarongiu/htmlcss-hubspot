@@ -97,6 +97,7 @@ header.header-top div.float-left a:first-child{
 header.header-btm{
     background-color: red;
     height: 100px;  
+    line-height: 100px;
 }
 
 header.header-btm img{
@@ -139,14 +140,23 @@ main{
 }
 
 main .main-top{
-    width: 800px;
+    width: 802px;
     height: 400px;
+    margin: 0 auto;
     background-color: #f4f9fd;
     text-align: center;
 }
 
 main section.main-top img{
     width: 300px;
+    margin: 20px;
+}
+
+main section.main-top h2{
+    margin-bottom: 40px;
+}
+
+main section.main-top p{
     margin: 20px 0;
 }
 
