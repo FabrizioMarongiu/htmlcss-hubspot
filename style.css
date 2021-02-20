@@ -158,7 +158,9 @@ main section.main-top img{
     margin: 20px;
 }
 
-main section.main-top h2{ 
+main section.main-top h2,
+div.white-box-top div.box-left h2,
+div.white-box-bottom h2{ 
     margin-bottom: 40px;
 }
 
@@ -183,14 +185,14 @@ section.main-middle div.main-box{
     margin-bottom: 40px;
 }
 
-section.main-middle .box-left{
+/* section.main-middle */ .box-left{
     width: 29%;
     height: 100%;
     margin: 0 1%;
     text-align: center;
 }
 
-section.main-middle .box-right{
+/* section.main-middle*/ .box-right{ 
     width: 67%;
     height: 100%;
     margin: 0 1%;
@@ -285,4 +287,47 @@ section.blue-box div.container.clearfix:last-child div.blue-box-cube{
 
 section.blue-box div.container.clearfix:last-child{
     padding-bottom: 50px;
+}
+
+/* SECTION WHITE BOX */
+/* SECTION WHITE BOX TOP */
+
+div.white-box-top div.box-left,
+div.white-box-top div.box-right{
+    padding: 50px 40px;
+}
+
+div.box-logo img{
+    width: 100px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    vertical-align: middle;
+}
+
+div.container-logo:last-child div.box-logo:nth-child(2) img,
+div.container-logo:last-child div.box-logo:nth-child(4) img{
+    padding-top: 11px;
+}
+
+div.container-logo:last-child div.box-logo:nth-child(1) img{
+    padding-top: 5px;
+}
+
+div.container-logo:first-child div.box-logo:nth-child(1) img,
+div.container-logo:first-child div.box-logo:nth-child(2) img{
+    padding-top: 5px;
+}
+
+/* WHITE BOX BOTTOM */
+div.white-box-bottom,
+div.white-box-bottom a{
+    margin: 60px auto;
+    position: relative;
+}
+
+div.white-box-bottom img{
+    width: 330px;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
 }
