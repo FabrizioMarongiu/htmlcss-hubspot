@@ -6,11 +6,11 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #33475b;
 }
 
 h1{
     font-size: 45px;
-    color: #33475b;
 }
 
 /* UTILITY */
@@ -37,6 +37,11 @@ li.list-inline{
     display: inline-block;
     margin: 0 10px;
     list-style: none;
+}
+
+li.list-vertical{
+    list-style: none;
+    text-align: left;
 }
 
 a{
@@ -72,12 +77,10 @@ a{
 
 .middle-text{
     font-size: 14px;
-    color: #33475b;
 }
 
 .thin-text{
     font-size: 10px;
-    color: #33475b;
 }
 
 .w50{
@@ -110,8 +113,10 @@ section.jumbotron{
     background-image: url("./img-hubspot/jumbotron.png");
     background-size: 1435px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-color: #fff4ef;
+    background-position: 50% 100%;
     position: relative;
+    border-top: 5px solid #fff4ef;
 }
 
 div.greenbar{
@@ -130,7 +135,8 @@ div.jumbo-text{
 }
 
 div.jumbo-text p,
-div.main-box div.box-right p{
+div.main-box div.box-right p,
+main div.blue-box-top p{
     margin: 40px 0;
 }
 
@@ -152,7 +158,7 @@ main section.main-top img{
     margin: 20px;
 }
 
-main section.main-top h2{
+main section.main-top h2{ 
     margin-bottom: 40px;
 }
 
@@ -196,33 +202,87 @@ div.main-box div.box-left img{
     margin: 35px 0;
 }
 
-div.main-box div.box-right h3{
+div.main-box div.box-right h3,
+section.main-btm div.main-btm-box div.btm-mini-box h3{
     font-size: 30px;
-    color: #33475b;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
-div.main-box div.box-right h4{
+div.main-box div.box-right h4,
+section.main-btm div.main-btm-box div.btm-mini-box h4{
     margin: 10px 0 40px 0;
 }
 
 hr.mini-bar{
     position: absolute;
     right: 9%;
-    bottom: 33%;
+    bottom: 22%;
     width: 400px;
 }
 
 /* MAIN BOTTOM */
 
-section.main-btm div.main-btm-box{
-    height: 650px;
+/* section.main-btm div.main-btm-box{
+    height: 750px;
     background-color: teal;
-}
+} */
 
 section.main-btm div.main-btm-box div.btm-mini-box{
     width: calc( 100% / 3 - 30px);
     background-color: white;
-    height: 300px;
     margin: 15px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 2px #dbe2e8;
+}
+
+section.main-btm div.main-btm-box div.btm-mini-box img{
+    height: 100px;
+    margin: 40px 0;
+}
+
+hr{
+    width: 250px;
+    margin: 40px 0;
+}
+
+section.main-btm div.main-btm-box div.btm-mini-box ul{
+    margin: 20px 0 60px 0;
+}
+
+/* SECTION BLUE-BOX */
+
+main section.blue-box{
+    background-color: #00a9b8;
+    text-align: center;
+    color: white;   
+}
+
+main section.blue-box div.blue-box-top{
+    padding: 50px 110px 50px;
+}
+
+section.blue-box div.blue-box-cube{
+    height: 170px;
+    width: calc( 100% / 4 );
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 20px 0;
+}
+
+section.blue-box div.blue-box-cube:last-child{
+    border-right: none;
+}
+
+section.blue-box div.blue-box-cube h2{
+    padding: 20px 0;
+}
+
+section.blue-box div.container.clearfix:last-child div.blue-box-cube{
+    border-bottom: none;
+}
+
+section.blue-box div.container.clearfix:last-child{
+    padding-bottom: 50px;
 }
