@@ -115,8 +115,6 @@ i.fas.fa-check-circle{
 /* HEADER */
 
 div.header-top{
-    /* height: 100px;
-    line-height: 100px; */
     padding: 30px 0;
     background-color: #f4f9fd;
     border-bottom: 2px solid #7a8b97;
@@ -124,11 +122,23 @@ div.header-top{
  
 div.header-top div.float-left a:first-child{
     border-right: 2px solid grey;
-   
 }
 
-div.header-btm{
+div.header-btm img{
     padding: 30px 0;    
+}
+
+li.list-box{
+    height: 94px;
+    width: 95px;
+    padding-top: 30px; 
+}
+
+li.list-box:hover{
+    height: 94px;
+    width: 95px;
+    padding-top: 30px;
+    border-bottom: 2px solid #7a8b97;   
 }
 
 /* JUMBOTRON */
@@ -142,7 +152,9 @@ section.jumbotron{
     background-position: 50% 100%;
     position: relative;
     border-top: 5px solid #fff4ef;
+    z-index: 5;
 }
+
 
 div.greenbar{
     width: 100%;
@@ -209,14 +221,14 @@ section.main-middle div.main-box{
     margin-bottom: 40px;
 }
 
-/* section.main-middle */ .box-left{
+.box-left{
     width: 29%;
     height: 100%;
     margin: 0 1%;
     text-align: center;
 }
 
-/* section.main-middle*/ .box-right{ 
+.box-right{ 
     width: 67%;
     height: 100%;
     margin: 0 1%;
@@ -275,7 +287,8 @@ section.main-btm div.main-btm-box div.btm-mini-box ul{
 /* SECTION BLUE-BOX */
 
 main section.blue-box{
-    background-color: #00a9b8;
+    /* background-color: #00a9b8; */
+    background: linear-gradient(to left bottom, #06cabd, #0a9ba8);
     text-align: center;
     color: white;   
 }
@@ -285,7 +298,6 @@ main section.blue-box div.blue-box-top{
 }
 
 section.blue-box div.blue-box-cube{
-    height: 170px;
     width: calc( 100% / 4 );
     border-bottom: 1px solid white;
     border-right: 1px solid white;
@@ -310,6 +322,10 @@ section.blue-box div.container.clearfix:last-child{
 
 /* SECTION WHITE BOX */
 /* SECTION WHITE BOX TOP */
+section.white-box{
+    width: 900px;
+    margin: auto;
+}
 
 div.white-box-top div.box-left,
 div.white-box-top div.box-right{
@@ -317,7 +333,7 @@ div.white-box-top div.box-right{
 }
 
 div.box-logo img{
-    width: 100px;
+    width: 90px;
     margin-left: 40px;
     margin-bottom: 40px;
     vertical-align: middle;
