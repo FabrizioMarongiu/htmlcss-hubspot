@@ -52,6 +52,21 @@ a{
     font-weight: 900;
 }
 
+a:hover,
+div.footer-list a:not(a.btn):hover,
+div.footer-top-text a:hover,
+div.footer-bottom-right a:hover{
+    color: #fe775a;
+}
+
+a i:hover{
+    color: turquoise;
+}
+
+a.btn:hover{
+    color: lightseagreen;
+}
+
 .btn{
     display: inline-block;
     min-width: 100px;
@@ -75,6 +90,12 @@ a{
     min-width: 150px;
 }
 
+.white-btn{
+    background-color: #dadee0;
+    color: #32495b;
+    border-color: white;
+}
+
 .middle-text{
     font-size: 14px;
 }
@@ -85,6 +106,10 @@ a{
 
 .w50{
     width: 50%;
+}
+
+i.fas.fa-check-circle{
+    color:#fe775a
 }
 
 /* HEADER */
@@ -176,7 +201,6 @@ section.main-middle{
 }
 
 section.main-middle div.main-box{
-    /* height: 100%; */
     background-color: white;
     position: relative;
     border-radius: 10px;
@@ -223,11 +247,6 @@ hr.mini-bar{
 }
 
 /* MAIN BOTTOM */
-
-/* section.main-btm div.main-btm-box{
-    height: 750px;
-    background-color: teal;
-} */
 
 section.main-btm div.main-btm-box div.btm-mini-box{
     width: calc( 100% / 3 - 30px);
@@ -319,15 +338,82 @@ div.container-logo:first-child div.box-logo:nth-child(2) img{
 }
 
 /* WHITE BOX BOTTOM */
-div.white-box-bottom,
 div.white-box-bottom a{
     margin: 60px auto;
-    position: relative;
 }
 
+div.white-box-bottom{
+    position: relative;
+}
 div.white-box-bottom img{
     width: 330px;
     position: absolute;
     right: 10%;
-    bottom: 0%;
+    bottom: 10%;
+}
+
+div.white-box-bottom div{
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+/* FOOTER TOP */
+footer{
+    background-color: #32495b;
+    height: 700px;
+    color: #dadee0;
+}
+
+div.footer-top{
+    padding: 65px 0;
+    border-bottom: 2px solid #dadee0;
+}
+
+div.footer-top div.footer-list{
+    width: calc( 100% / 4);
+    color: #dadee0;
+}
+div.footer-list li.list-vertical{
+   margin-left: -8px;
+   padding: 10px 0;
+}
+
+div.footer-list a:not(a.btn),
+div.footer-top-text a,
+div.footer-bottom-right a{
+    color: #dadee0;
+}
+
+div.footer-list a.btn{
+    margin-left: 10px;
+}
+
+div.footer-list i{
+    font-size: 18px;
+}
+
+div.footer-list li.list-inline{
+    margin: 0;
+}
+
+div.footer-list h3{
+    margin-bottom: 30px;
+}
+
+div.footer-top-text{
+    text-align: center;
+}
+
+div.footer-top-text li,
+div.footer-bottom-right li{
+    padding-top: 40px;
+}
+
+/* FOOTER BOTTOM */
+div.footer-bottom-left img{
+    margin: 10px 0;
+}
+
+div.footer-bottom-right{
+    text-align: right;
 }
